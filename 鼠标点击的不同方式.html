@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div1{
+            width: 400px;
+            height: 400px;
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <button id="btn">anniu</button>
+    <div id="btn2" class="div1"></div>
+    <script>
+        var btn=document.getElementById("btn")
+        var btn1=document.getElementById("btn2")
+        /*btn.addEventListener("click",function(){
+            console.log("单击");
+        })*/
+        btn.addEventListener("dbclick",function(){      //  暂时不能实现；
+            console.log("双击");
+        })
+        btn.addEventListener("mousedown",function(){
+            console.log("down");
+        })
+        btn.addEventListener("mouseup",function(){
+            console.log("up");
+        })
+        btn1.onmousemove=function(){                       //鼠标移动是响应
+            console.log("move");
+        }
+    </script>
+</body>
+</html>
